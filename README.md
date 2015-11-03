@@ -1,0 +1,1 @@
+# wefoster-child-theme
