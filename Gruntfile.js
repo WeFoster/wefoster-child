@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/css/main.min.css': [
-            'assets/less/app.less'
+            'assets/less/main.less'
           ]
         },
         options: {
@@ -59,7 +59,6 @@ module.exports = function(grunt) {
           //Watch for changes in parent and child.
           '../wefoster/assets/less/**/**/**/*.less',
           'assets/less/**/**/**/*.less'
-
         ],
         tasks: ['less']
       },

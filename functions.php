@@ -19,6 +19,21 @@ function wff_child_theme_setup()
 add_action( 'after_setup_theme', 'wff_child_theme_setup' );
 
 
-require_once locate_template('/child-lib/scripts.php');          	// Custom functions
-require_once locate_template('/child-lib/custom.php');          	// Custom functions
+// Load the required files. Please see the docs:
+// https://documentation.wefoster.co/kb/when-to-use-constants-filters-and-actions-to-build-page-layouts/
+
+// https://documentation.wefoster.co/kb/constants/
+require_once locate_template('/child-lib/constants.php');
+
+// https://documentation.wefoster.co/kb/actions/
+require_once locate_template('/child-lib/actions.php');
+
+// https://documentation.wefoster.co/kb/filters/
+require_once locate_template('/child-lib/filters.php');
+
+// https://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
+require_once locate_template('/child-lib/scripts.php');
+
+//https://documentation.wefoster.co/kb/advanced-functions-overwritingreplacingadding-new-functionality/
+require_once locate_template('/child-lib/custom.php');
 ?>
