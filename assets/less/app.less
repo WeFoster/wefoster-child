@@ -1,0 +1,24 @@
+/*!
+ * WeFoster Child Theme
+ */
+
+
+@import "../../../wefoster/assets/less/main.less";
+@import "../../../wefoster/assets/less/buddypress.less";
+
+// TODO
+//This is a bit of weird way to fix the path loading error.
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?v=@{fa-version}');
+  src: url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=@{fa-version}') format('embedded-opentype'),
+    url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.woff?v=@{fa-version}') format('woff'),
+    url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.ttf?v=@{fa-version}') format('truetype'),
+    url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.svg?v=@{fa-version}#fontawesomeregular') format('svg');
+//  src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "theme.less";
+@import "styleguide.less";
