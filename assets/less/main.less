@@ -1,13 +1,38 @@
 /*!
- * WeFoster Child Theme
+ * WeFoster Child Theme LESS
  */
+// Please read this first:
+// https://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
 
+// Import LESS from WeFoster.
+// NOTE: Uncomment the lines below if you do want to overwrite the Parent Theme style completely.
+// NOTE: If you do this please take a look at child-lib/scripts.php
 
-@import "../../../wefoster/assets/less/main.less";
 @import "../../../wefoster/assets/less/buddypress.less";
+@import "../../../wefoster/assets/less/main.less";
 
-// TODO
-//This is a bit of weird way to fix the path loading error.
+// In that case you DO want to import the parent theme & Bootstrap variables.
+// @import "../../../wefoster/assets/vendor/bootstrap-less/less/variables.less";
+// @import "../../../wefoster/assets/vendor/bootstrap-less/less/mixins.less";
+// @import "../../../wefoster/assets/less/variables.less;
+
+//
+// Your Custom WeFoster Theme
+//
+
+// Variables. Read: https://documentation.wefoster.co/kb/less-variables/
+@import "custom-variables.less";
+
+//Your custom theme. We advise you to split up your LESS in several files.
+// Take a look at wefoster/assets/less to see how we did it.
+@import "theme.less";
+
+
+//
+// End of Your Custom Theme
+//
+
+//Change the font loading path. Do not touch.
 @font-face {
   font-family: 'FontAwesome';
   src: url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?v=@{fa-version}');
@@ -19,6 +44,3 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@import "theme.less";
-@import "styleguide.less";

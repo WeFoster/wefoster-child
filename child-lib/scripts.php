@@ -3,8 +3,8 @@
 // You can remove the WeFoster parent theme styles by uncommenting the line below.
 
 //add_action( 'wp_enqueue_scripts', 'my_dequeue_styles', 10000 );
-function my_dequeue_styles() {
-  
+function wff_dequeue_styles() {
+
     //Remove standard styles
     wp_dequeue_style( 'wff_main' );
 
@@ -15,6 +15,9 @@ function my_dequeue_styles() {
 
 function wff_child_scripts() {
   wp_enqueue_style('wff_child', get_stylesheet_directory_uri() . '/assets/css/main.min.css', false, '57bab3e3cd9dbc91e4f2fbea81c57816');
+
+  //This is a simple CSS file for those who are not interested in LESS. You can dequeue it if needed.
+  wp_enqueue_style('wff_child_custom_css', get_stylesheet_directory_uri() . '/custom.css' );
 
   wp_register_script('wff_child_scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array(), '31f856a97839114025338bd815558cec', true);
 
