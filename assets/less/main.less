@@ -4,17 +4,13 @@
 // Please read this first:
 // https://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
 
-// Import LESS from WeFoster.
-// NOTE: Uncomment the lines below if you do want to overwrite the Parent Theme style completely.
-// NOTE: If you do this please take a look at child-lib/scripts.php
+//How do you want to extend the WeFoster Theme?
 
-@import "../../../wefoster/assets/less/buddypress.less";
-@import "../../../wefoster/assets/less/main.less";
+// Replace all parent CSS (Recommended)
+@import "replace.less";
 
-// In that case you DO want to import the parent theme & Bootstrap variables.
-// @import "../../../wefoster/assets/vendor/bootstrap-less/less/variables.less";
-// @import "../../../wefoster/assets/vendor/bootstrap-less/less/mixins.less";
-// @import "../../../wefoster/assets/less/variables.less;
+// Simply extend the parent CSS. (Good for tiny tweaks)
+//@import "extend.less";
 
 //
 // Your Custom WeFoster Theme

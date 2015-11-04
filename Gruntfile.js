@@ -48,9 +48,9 @@ module.exports = function(grunt) {
       options: {
         file: 'child-lib/scripts.php',
         css: 'assets/css/main.min.css',
-        cssHandle: 'wef_main',
+        cssHandle: 'wff_child_custom_less',
         js: 'assets/js/scripts.min.js',
-        jsHandle: 'wef_scripts'
+        jsHandle: 'wff_child_scripts'
       }
     },
     watch: {
