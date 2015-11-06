@@ -3,7 +3,7 @@
 // You can remove the WeFoster parent theme styles by uncommenting the line below.
 
 if ( WEFOSTER_LESS_TYPE == 'less' &&  WEFOSTER_LESS_METHOD == 'replace' ) {
-  add_action( 'wp_enqueue_scripts', 'my_dequeue_styles', 10000 );
+  add_action( 'wp_enqueue_scripts', 'wff_dequeue_styles', 10000 );
   function wff_dequeue_styles() {
 
       //Remove standard styles

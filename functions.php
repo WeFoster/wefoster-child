@@ -4,12 +4,12 @@
  */
 
 // http://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
-define('WEFOSTER_LESS_TYPE', 'css');
+define('WEFOSTER_LESS_TYPE', 'less');
 
 //define('WEFOSTER_LESS_TYPE', 'less');
 
 // This method will remove the parent CSS styles.
-//define('WEFOSTER_LESS_METHOD', 'replace');
+define('WEFOSTER_LESS_METHOD', 'replace');
 
 // This method will NOT remove the Parent CSS.
 //define('WEFOSTER_LESS_METHOD', 'extend');
