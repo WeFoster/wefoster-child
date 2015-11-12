@@ -1,0 +1,25 @@
+{
+  "name": "wefoster-child",
+  "version": "1.0.0",
+  "homepage": "http://wefoster.co",
+  "authors": [
+    "Bowe Frankema <bowe@wefoster.co"
+  ],
+  "description": "The WeFoster Framework allows your to rapidly build BuddyPress and WordPress Communities",
+  "keywords": [
+    "buddypress",
+    "wordpress"
+  ],
+  "license": "GPL v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+
+  }
+}
