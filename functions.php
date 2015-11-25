@@ -45,7 +45,7 @@ function wff_child_theme_setup()
   // Grab text from parent
   load_theme_textdomain( 'wefoster', get_stylesheet_directory() . '/languages' );
 
-  // Translate text from the CHILD theme only.
+  // Uncomment to translate text from the CHILD theme only.
   // load_theme_textdomain( 'wefoster_child_theme', get_stylesheet_directory() . '/languages' );
 
 }

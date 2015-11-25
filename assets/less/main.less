@@ -3,16 +3,12 @@
  */
 // Please read this first:
 // https://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
-
 //How do you want to extend the WeFoster Theme?
-
 // Replace all parent CSS (Recommended)
 @import "replace.less";
 
 // Simply extend the parent CSS. (Good for tiny tweaks)
 //@import "extend.less";
-
-
 // Variables. Read: https://documentation.wefoster.co/kb/less-variables/
 @import "custom-variables.less";
 
@@ -20,20 +16,16 @@
 // Take a look at wefoster/assets/less to see how we did it.
 @import "theme.less";
 
-
 //
 // End of Your Custom Theme
 //
-
 //Change the font loading path. Do not touch.
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?v=@{fa-version}');
-  src: url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=@{fa-version}') format('embedded-opentype'),
-    url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.woff?v=@{fa-version}') format('woff'),
-    url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.ttf?v=@{fa-version}') format('truetype'),
-    url('../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.svg?v=@{fa-version}#fontawesomeregular') format('svg');
-//  src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  src: url(../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?v=@{fa-version});
+  src: url(../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=@{fa-version}) format('embedded-opentype'), url(../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.woff?v=@{fa-version}) format('woff'), url(../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.ttf?v=@{fa-version}) format('truetype'), url(../../../wefoster/assets/vendor/fontawesome/fonts/fontawesome-webfont.svg?v=@{fa-version}#fontawesomeregular) format('svg');
+  
+  //  src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
   font-weight: normal;
   font-style: normal;
 }

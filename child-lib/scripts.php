@@ -18,7 +18,7 @@ if ( WEFOSTER_LESS_TYPE == 'less' &&  WEFOSTER_LESS_METHOD == 'replace' ) {
 function wff_child_scripts() {
 
   if ( WEFOSTER_LESS_TYPE == 'less' ) {
-    wp_enqueue_style('wff_child_custom_less', get_stylesheet_directory_uri() . '/assets/css/main.min.css', false, '57bab3e3cd9dbc91e4f2fbea81c57816');
+    wp_enqueue_style('wff_child_custom_less', get_stylesheet_directory_uri() . '/assets/css/main.min.css', false, 'bdc9fa64dc6df3b6c674c3ea195c0d44');
   }
 
   if ( WEFOSTER_LESS_TYPE == 'css' ) {
@@ -26,7 +26,7 @@ function wff_child_scripts() {
   }
 
   if ( WEFOSTER_CUSTOM_JS == 'true' ) {
-    wp_register_script('wff_child_scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array(), '31f856a97839114025338bd815558cec', true);
+    wp_register_script('wff_child_scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array(), '911acd948151184ec83b6b47b9bebfad', true);
   }
 
   wp_enqueue_script('wff_child_scripts');
