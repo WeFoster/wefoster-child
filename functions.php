@@ -9,10 +9,10 @@ define('WEFOSTER_LESS_TYPE', 'less');
 //define('WEFOSTER_LESS_TYPE', 'less');
 
 // This method will remove the parent CSS styles.
-//define('WEFOSTER_LESS_METHOD', 'replace');
+define('WEFOSTER_LESS_METHOD', 'replace');
 
 // This method will NOT remove the Parent CSS.
-define('WEFOSTER_LESS_METHOD', 'extend');
+//define('WEFOSTER_LESS_METHOD', 'extend');
 
 // Set this to 'true' to load a Custom javascript file.
 define('WEFOSTER_CUSTOM_JS', 'false');
