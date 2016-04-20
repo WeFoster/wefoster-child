@@ -3,19 +3,29 @@
  * Theme Setup
  */
 
+if ( ! defined( 'WEFOSTER_LESS_TYPE' ) ) {
 // http://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
-define('WEFOSTER_LESS_TYPE', 'less');
+	define( 'WEFOSTER_LESS_TYPE', 'less' );
+}
 
-//define('WEFOSTER_LESS_TYPE', 'less');
 
-// This method will remove the parent CSS styles.
-define('WEFOSTER_LESS_METHOD', 'replace');
+if ( ! defined( 'WEFOSTER_LESS_METHOD' ) ) {
+  // http://documentation.wefoster.co/kb/using-less-and-grunt-to-generate-custom-stylesheets/
+  // This will remove the parent theme CSS completely.
+	//define( 'WEFOSTER_LESS_METHOD', 'replace' );
 
-// This method will NOT remove the Parent CSS.
-//define('WEFOSTER_LESS_METHOD', 'extend');
+  // This method will NOT remove the Parent CSS.
+  //define('WEFOSTER_LESS_METHOD', 'extend');
+}
 
-// Set this to 'true' to load a Custom javascript file.
-define('WEFOSTER_CUSTOM_JS', 'false');
+
+
+if ( ! defined( 'WEFOSTER_LESS_METHOD' ) ) {
+  //Set this to true to enqueue the custom JS file in assets/js/scripts.min.js
+  define('WEFOSTER_CUSTOM_JS', 'false');
+}
+
+
 
 // Load the required files. Please see the docs:
 // https://documentation.wefoster.co/kb/when-to-use-constants-filters-and-actions-to-build-page-layouts/
